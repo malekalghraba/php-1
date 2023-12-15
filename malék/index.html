@@ -1,0 +1,262 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1" shrink-to-fit="no">
+              <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <title>Taysir</title>
+        <style>
+        label {
+  width: 110px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 6px;
+}
+            body{
+                background-color: #ABD1DC;
+            }
+            #ll{background-color: #ABD1DC;}
+        </style>
+    </head>
+    
+    <body>
+        <div class="jumbotron text-center" id="ll">
+           <h2>Formulaire De Demande De Crédit</h2> 
+            </div>
+               <div class="container">
+                 <div class="row">
+                    <div class="col-sm-6">
+                      <h2>Vos coordonnées  المعطيات الشخصية</h2>
+                        </div>
+                   </div>
+                           <form name = "f" action="ajout2.php"  method="post">
+                                     <div class="container">
+
+  <div class="form-group">
+    <div class = "row">    
+        <div class="col-sm-3">
+            <label for="np"> Nom & Prénom <br> الاسم واللقب <font color="red">*</font> </label></div>
+        <div class="col-sm-9">
+    <input type="text" class="form-control" id="np" name="nip" placeholder="Enter votre nom et prénom">
+        </div>
+          </div>
+  </div>
+   <div class="row">
+       <div class="col-sm-3"><label>Genre <br> الجنس <font color ="red">*</font></label></div>
+       <div class="col-sm-9">
+      <input type="radio" name="sexe" id="hom" value="Homme"/> Homme &nbsp;&nbsp;
+        
+      <input type="radio" name="sexe"  id="fem" value="Femme"/> Femme &nbsp;&nbsp;
+   
+  
+  </div>  
+                                         </div>
+                                                                    
+  <div class="form-group">
+          <div class = "row">   
+             <div class="col-sm-3">
+ <label for="cin"> Numéro CIN<br>رقم بطاقة التعريف الوطنية <font color="red">*</font></label></div>
+ <div class="col-sm-9">
+    <input type="text" class="form-control" id="cin" placeholder="Entrer votre cin" name="ci">
+  </div>
+      </div>
+      
+      <div class="form-group">
+          <div class = "row">   
+             <div class="col-sm-3">
+ <label for="date"> Date de naissance<br>تاريخ الميلاد<font color="red">*</font></label></div>
+ <div class="col-sm-9">
+    <input type="date" class="form-control" id="date" name="date" >
+  </div>
+     </div>
+      </div>
+      
+      <div class="form-group">
+          <div class = "row">   
+             <div class="col-sm-3">
+ <label for="vous"> La Situation Actuelle  <br>الوضع الحالي <font color="red">*</font></label></div>
+ <div class="col-sm-9">
+    <select class="form-control" id="vous" name="vous">
+        <option disabled selected  value="">Actuellement, vous êtes  حاليا، أنت </option>
+        <option value="Exploitant agricole فلاح">Exploitant agricole فلاح</option>
+        <option value="Artisan,commercant,independant   حرفي،، تاجر، مستقل">Artisan,commercant,independant   حرفي، تاجر، مستقل</option>
+        <option value="Chef/Propriétaire d'entreprise   صاحب مؤسسة">Chef/Propriétaire d'entreprise   صاحب مؤسسة</option>
+        <option value="Profession Libérale مهنة حرة ">Profession Libérale مهنة حرة </option>
+        <option value="Ouvrier Agricole عامل فلاحي">Ouvrier Agricole عامل فلاحي </option>
+        <option value="Ouvrier Non Agricole  عامل">Ouvrier Non Agricole  عامل</option>
+        <option value="Employé,cadre  موظف أو مسؤول">Employé,cadre  موظف أو مسؤول</option>
+        <option value="Chômeur  عاطل عن العمل">Chômeur  عاطل عن العمل</option>
+        <option value="Retraité متقاعد">Retraité متقاعد</option>
+        <option value="Etudiant  طالب">Etudiant  طالب</option>
+      </select>
+     </div>
+      </div>
+          
+   
+ </div>
+       </div>
+                                         </div>
+     <div class="row">
+                    <div class="col-sm-6">
+                      <h2>Votre demande de crédit&nbsp;&nbsp;&nbsp;&nbsp;طلب القرض</h2>
+                        </div>
+                   </div>                                     
+                             
+         <div class="container">
+
+  <div class="form-group">
+    <div class = "row">    
+        <div class="col-sm-3">
+            <label for="projet"> Vous avez un projet ? <br>	هل لديك مشروع؟ <font color="red">*</font> </label></div>
+        <div class="col-sm-9">
+            
+       <select class="form-control" id="projet" name="projet">
+        <option disabled selected  value="" >Vous avez un projet ?	هل لديك مشروع؟ </option>
+        <option value="oui"> Oui نعم</option>
+        <option value="non">Non لا</option>   
+        <option value="À créer">À créer قيد الإنشاء</option>   
+            </select>
+        </div>
+          </div>
+             </div>
+              <div class="form-group">
+          <div class = "row">   
+             <div class="col-sm-3">
+ <label for="description">  Description de votre projet<br>وصف المشروع <font color="red">*</font></label></div>
+ <div class="col-sm-9">
+ <textarea class="form-control" cols="40" id="description" name="des" rows="10"></textarea>  </div>
+     </div>
+      </div>
+             
+                                                                     
+                                         
+                                         </div>
+     
+    <div class="form-group">
+    <div class = "row">    
+        <div class="col-sm-3">
+            <label for="etat">microcrédit_demandé<br> القرض_المطلوب<font color="red">*</font></label> </div>
+                <div class="col-sm-9">     
+         
+         <input name="genre" type="radio" value="INTILAK" id="int"/>
+         INTILAK&nbsp;&nbsp;
+       
+      
+         <input name="genre" type="radio" value="TANMYA" id="tan"/>
+         TANMYA&nbsp;&nbsp;
+       
+      
+         <input name="genre" type="radio" value="TAWFIK" id="taw"/>
+         TAWFIK&nbsp;&nbsp;
+       
+         </div>
+        </div></div>
+
+    
+      <div class="form-group">
+    <div class = "row">    
+        <div class="col-sm-3">
+            <label for="mont"> Montant souhaité <br> المبلغ المطلوب <font color="red">*</font> </label></div>
+        <div class="col-sm-9">
+    <input type="text" class="form-control" id="mont"  name="mon" placeholder="Plafond 20 000 dt   حتى إلى 000 20 دت">
+        </div>
+          </div>
+  </div>
+        
+<div class="row">
+                    <div class="col-sm-6">
+                      <h2>Adresse & Contact&nbsp;&nbsp;&nbsp;&nbsp;العنوان و وسائل الإتصال</h2>
+                        </div>
+                   </div>  
+                               
+<div class="container">
+
+  <div class="form-group">
+    <div class = "row">    
+        <div class="col-sm-3">
+            <label for="adresse">  Adresse projet (actuel/futur) <br>		الحالي / المستقبلي)عنوان المشروع)	 <font color="red">*</font> </label></div>
+        <div class="col-sm-9">
+        <select class="form-control" id="adresse" name="adres">
+        <option disabled selected value=""> Gouvernorat&nbsp;&nbsp;الولاية </option>
+        <option value="Ariana"> Ariana </option>
+        <option value="Béja">Béja</option>   
+        <option value="Ben Arous">Ben Arous</option>   
+        <option value="Bizerte">Bizerte</option>   
+        <option value="Gabès">Gabès</option>
+        <option value="Gafsa">Gafsa</option>   
+        <option value="Jendouba">Jendouba </option>
+        <option value="Kairouan"> Kairouan </option>
+        <option value="Kasserine"> Kasserine </option>
+        <option value="Kebili"> Kebili </option>
+        <option value="Kef">  Kef </option>   
+        <option value="Mahdia"> Mahdia </option>
+        <option value="Manouba"> Manouba </option>
+        <option value="Medenine"> Medenine </option>
+        <option value="Monastir"> Monastir </option>
+        <option value="Nabeul"> Nabeul </option>   
+        <option value="Sfax"> Sfax </option>
+        <option value="Sidi Bouzid"> Sidi Bouzid </option>
+        <option value=" Siliana"> Siliana </option>
+        <option value="Sousse"> Sousse </option>
+        <option value="Tataouine"> Tataouine </option>    
+        <option value="Tozeur"> Tozeur </option>
+        <option value="Tunis"> Tunis </option>
+        <option value="Zaghouan"> Zaghouan </option>      
+         </select>
+        </div>
+          </div>    
+    </div>
+    <div class="form-group">
+    <div class = "row">    
+        <div class="col-sm-3">
+            <label for="delegation">Délégation</label></div>
+        <div class="col-sm-9">
+      <input type="text" class="form-control" id="delegation" name="deleg">
+        </div>
+          </div>
+  </div>
+    <div class="form-group">
+          <div class = "row">   
+             <div class="col-sm-3">
+ <label for="ad"> Adresse du domicile<br> العنوان الشخصي <font color="red">*</font></label></div>
+ <div class="col-sm-9">
+    <input type="text" class="form-control" id="ad" name="adr">
+  </div>
+        </div></div>
+     <div class="form-group">
+          <div class = "row">   
+             <div class="col-sm-3">
+ <label for="tele"> Numéro de téléphone<br> رقم الهاتف <font color="red">*</font></label></div>
+ <div class="col-sm-9">
+    <input type="tel" class="form-control" id="tele" name="tf" >
+  </div>
+        </div></div>
+     <div class="form-group">
+          <div class = "row">   
+             <div class="col-sm-3">
+ <label for="mail"> Adresse e-mail<br> البريد الإلكتروني <font color="red">*</font></label></div>
+ <div class="col-sm-9">
+    <input type="email" class="form-control" id="mail"  name="mal">
+  </div>
+        </div></div>
+    
+    
+              </div>  
+    <div class=row>
+        <div class="col-sm-6"></div>
+        <div class="col-sm-6">
+   <div class="form-group col-sm-1">
+       <input class="btn btn-primary" type="submit" id="submit" value="Envoyer" onclick="verif()" >
+            </div> </div></div>
+		                             
+</form>
+                   
+                          
+                           </div>
+        
+         
+    </body>
+    
+</html>
